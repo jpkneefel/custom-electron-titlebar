@@ -71,12 +71,12 @@ export declare class Titlebar extends Themebar {
     private menubar;
     constructor(options?: TitlebarOptions);
     private closeMenu;
-    focus(): void;
-    blur(): void;
-    max(): void;
-    unMax(): void;
-    enterFullscreen(): void;
-    leaveFullscreen(): void;
+    focus: () => void;
+    blur: () => void;
+    max: () => void;
+    unMax: () => void;
+    enterFullscreen: () => void;
+    leaveFullscreen: () => void;
     private registerListeners;
     private createTitlebar;
     private onBlur;

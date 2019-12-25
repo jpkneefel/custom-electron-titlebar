@@ -138,32 +138,32 @@ export class Titlebar extends Themebar
 		}
 	};
 
-	focus()
+	focus = () =>
 	{
 		this.onDidChangeWindowFocus(true);
 		this.onFocus();
-	}
-	blur()
+	};
+	blur = () =>
 	{
 		this.onDidChangeWindowFocus(false);
 		this.onBlur();
-	}
-	max()
+	};
+	max = () =>
 	{
 		this.onDidChangeMaximized(true);
-	}
-	unMax()
+	};
+	unMax = () =>
 	{
 		this.onDidChangeMaximized(false);
-	}
-	enterFullscreen()
+	};
+	enterFullscreen = () =>
 	{
 		this.onDidChangeFullscreen(true);
-	}
-	leaveFullscreen()
+	};
+	leaveFullscreen = () =>
 	{
 		this.onDidChangeFullscreen(false);
-	}
+	};
 
 	private registerListeners()
 	{
